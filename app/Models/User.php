@@ -45,3 +45,4 @@ class User extends Authenticatable
         return $this->belongsToMany(Post::class, 'post_user', 'post_id', 'user_id');
     }
 }
+  
