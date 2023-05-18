@@ -32,7 +32,7 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
+ 
     /**
      * The attributes that should be cast.
      *
@@ -45,4 +45,3 @@ class User extends Authenticatable
         return $this->belongsToMany(Post::class, 'post_user', 'post_id', 'user_id');
     }
 }
-  

@@ -4,8 +4,11 @@
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Helpers\Routes\RouteHelper;
 
 require __DIR__ .'/api/v1/users.php';
+require __DIR__ .'/api/v1/comments.php';
+require __DIR__ .'/api/v1/posts.php';
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,7 +20,7 @@ require __DIR__ .'/api/v1/users.php';
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
